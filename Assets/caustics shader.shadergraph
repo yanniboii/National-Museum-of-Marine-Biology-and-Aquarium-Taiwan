@@ -301,8 +301,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 131.9999237060547,
-            "y": -36.00001525878906
+            "x": 344.9999694824219,
+            "y": -37.99999237060547
         },
         "m_Blocks": [
             {
@@ -318,8 +318,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 131.9999237060547,
-            "y": 163.99998474121095
+            "x": 344.9999694824219,
+            "y": 196.99998474121095
         },
         "m_Blocks": [
             {
@@ -413,10 +413,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -243.555419921875,
-            "y": 511.1111755371094,
-            "width": 209.3333282470703,
-            "height": 304.0
+            "x": -243.0,
+            "y": 511.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -464,6 +464,8 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": {
         "r": 1.0,
         "g": 1.0,
@@ -694,10 +696,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1334.0,
-            "y": 233.9999542236328,
-            "width": 110.6666259765625,
-            "height": 35.99998474121094
+            "x": -1403.0001220703125,
+            "y": 348.0000305175781,
+            "width": 108.0,
+            "height": 34.000030517578128
         }
     },
     "m_Slots": [
@@ -908,10 +910,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -560.0,
-            "y": -152.0,
-            "width": 122.0,
-            "height": 150.6666259765625
+            "x": -1386.0001220703125,
+            "y": 94.00004577636719,
+            "width": 120.0,
+            "height": 149.00001525878907
         }
     },
     "m_Slots": [
@@ -1500,10 +1502,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -892.0,
-            "y": 341.99993896484377,
-            "width": 209.3333740234375,
-            "height": 363.3333740234375
+            "x": -891.0,
+            "y": 337.0,
+            "width": 208.0,
+            "height": 360.0
         }
     },
     "m_Slots": [
@@ -1611,10 +1613,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -847.9999389648438,
-            "y": -245.33334350585938,
-            "width": 209.33331298828126,
-            "height": 318.0
+            "x": -1674.000244140625,
+            "y": 0.9999750256538391,
+            "width": 208.0,
+            "height": 314.00006103515627
         }
     },
     "m_Slots": [
@@ -1690,12 +1692,24 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": 1.0,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
-    }
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {
@@ -1710,10 +1724,10 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1328.0,
-            "y": 291.33331298828127,
-            "width": 81.333251953125,
-            "height": 78.66668701171875
+            "x": -1397.0001220703125,
+            "y": 405.0000305175781,
+            "width": 79.0,
+            "height": 76.00006103515625
         }
     },
     "m_Slots": [
@@ -1770,10 +1784,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -387.3333740234375,
-            "y": -139.3333282470703,
-            "width": 130.66671752929688,
-            "height": 102.66665649414063
+            "x": -1213.0001220703125,
+            "y": 106.99999237060547,
+            "width": 128.0,
+            "height": 101.00005340576172
         }
     },
     "m_Slots": [
@@ -1833,10 +1847,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1199.3333740234375,
-            "y": 249.3332977294922,
-            "width": 209.33331298828126,
-            "height": 304.00006103515627
+            "x": -1266.0,
+            "y": 360.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -2020,12 +2034,24 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": 0.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
-    }
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {
@@ -2123,12 +2149,24 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": 2.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
-    }
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {
@@ -2166,12 +2204,24 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
     "m_Value": 5.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
-    }
+    },
+    "m_SliderType": 0,
+    "m_SliderPower": 3.0,
+    "m_EnumType": 0,
+    "m_CSharpEnumString": "",
+    "m_EnumNames": [
+        "Default"
+    ],
+    "m_EnumValues": [
+        0
+    ]
 }
 
 {
