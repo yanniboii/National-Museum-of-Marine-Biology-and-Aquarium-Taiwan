@@ -341,7 +341,7 @@ MonoBehaviour:
   availableMaterialQualityLevels: -1
   m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
-  m_VolumeProfile: {fileID: 11400000, guid: ff0e622765552a64a9d6537a8d8751ae, type: 2}
+  m_VolumeProfile: {fileID: 11400000, guid: c02fb93d5d9fa7640a9be368b63c85df, type: 2}
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256
     streamingMipPreloadTexturesPerFrame: 0

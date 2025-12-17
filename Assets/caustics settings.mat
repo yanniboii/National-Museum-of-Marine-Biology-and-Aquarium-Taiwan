@@ -96,7 +96,7 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
-    - _Freshnel_power: 2.5
+    - _Freshnel_power: 5.2
     - _Fresnel_Power: 1
     - _Noise: 0.1
     - _Offset: 1.84
