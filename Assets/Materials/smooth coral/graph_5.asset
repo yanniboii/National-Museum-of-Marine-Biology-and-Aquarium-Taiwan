@@ -146,8 +146,9 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://coral_4\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"3013191767\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"hue\" uid=\"3585424261\" type=\"0\" value=\"0.909\"
-    />\n  <presetinput identifier=\"saturation\" uid=\"3585424271\" type=\"0\" value=\"0.137\"
+    <presetinput identifier=\"hue\" uid=\"3585424261\" type=\"0\" value=\"0.386\"
+    />\n  <presetinput identifier=\"saturation\" uid=\"3585424271\" type=\"0\" value=\"0.398\"
+    />\n  <presetinput identifier=\"luminosity\" uid=\"3585424265\" type=\"0\" value=\"0.361\"
     />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 1
@@ -156,9 +157,9 @@ MonoBehaviour:
   DefaultPreset: " <sbspreset pkgurl=\"pkg://coral_4\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"3013191767\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
-  MaterialShader: Shader Graphs/coral 3
-  RenderTextures: 1
-  OutputRemaped: 1
+  MaterialShader: Shader Graphs/coral 3.2
+  RenderTextures: 0
+  OutputRemaped: 0
   Presets: []
   references:
     version: 2
@@ -216,7 +217,7 @@ MonoBehaviour:
             image
           Type: 0
           WidgetType: 1
-        Data: 0.909
+        Data: 0.386
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0
@@ -237,7 +238,7 @@ MonoBehaviour:
             of the input image's color
           Type: 0
           WidgetType: 1
-        Data: 0.137
+        Data: 0.398
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0
@@ -258,7 +259,7 @@ MonoBehaviour:
             of the input image
           Type: 0
           WidgetType: 1
-        Data: 0.5
+        Data: 0.361
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0

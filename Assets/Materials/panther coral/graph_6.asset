@@ -144,7 +144,10 @@ MonoBehaviour:
   PhysicalSize: {x: 0, y: 0, z: 0}
   EnablePhysicalSize: 0
   Thumbnail: 
-  CurrentStatePreset: 
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://coral_5\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"3298728129\" type=\"8\" value=\"10,10\" />\n 
+    <presetinput identifier=\"hue\" uid=\"2729576469\" type=\"0\" value=\"0.926\"
+    />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 1
   GenerateAllMipmaps: 1
@@ -212,7 +215,7 @@ MonoBehaviour:
             image
           Type: 0
           WidgetType: 1
-        Data: 0.5
+        Data: 0.926
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0

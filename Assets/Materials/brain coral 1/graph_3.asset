@@ -144,9 +144,7 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://coral_1\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"3287506136\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"hue\" uid=\"2782900067\" type=\"0\" value=\"0.663\"
-    />\n  <presetinput identifier=\"saturation\" uid=\"2782900121\" type=\"0\" value=\"0.529\"
-    />\n  <presetinput identifier=\"luminosity\" uid=\"2782900113\" type=\"0\" value=\"0.568\"
+    <presetinput identifier=\"hue\" uid=\"2782900067\" type=\"0\" value=\"0.091\"
     />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 1
@@ -215,7 +213,7 @@ MonoBehaviour:
             image
           Type: 0
           WidgetType: 1
-        Data: 0.663
+        Data: 0.091
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0

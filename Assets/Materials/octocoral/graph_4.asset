@@ -20,15 +20,15 @@ MonoBehaviour:
   GUID: a1882a10-48cf-4be3-9d2a-65d3c75606b3
   Index: 4
   Input:
-  - rid: 8658058305658683403
-  - rid: 8658058305658683404
-  - rid: 8658058305658683405
-  - rid: 8658058305658683406
-  - rid: 8658058305658683407
-  - rid: 8658058305658683408
-  - rid: 8658058305658683409
-  - rid: 8658058305658683410
-  - rid: 8658058305658683411
+  - rid: 8658058403476144176
+  - rid: 8658058403476144177
+  - rid: 8658058403476144178
+  - rid: 8658058403476144179
+  - rid: 8658058403476144180
+  - rid: 8658058403476144181
+  - rid: 8658058403476144182
+  - rid: 8658058403476144183
+  - rid: 8658058403476144184
   Output:
   - Index: 0
     VirtualOutputIndex: 7
@@ -148,10 +148,11 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://coral_3\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"771571188\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"$randomseed\" uid=\"2056203174\" type=\"4\" value=\"1011\"
-    />\n  <presetinput identifier=\"saturation\" uid=\"1272037353\" type=\"0\" value=\"0.521\"
-    />\n  <presetinput identifier=\"luminosity\" uid=\"1272037335\" type=\"0\" value=\"0.489\"
-    />\n </sbspreset>\n"
+    <presetinput identifier=\"hue\" uid=\"1272037347\" type=\"0\" value=\"0.428\"
+    />\n  <presetinput identifier=\"saturation\" uid=\"1272037353\" type=\"0\" value=\"0.649\"
+    />\n  <presetinput identifier=\"luminosity\" uid=\"1272037335\" type=\"0\" value=\"0.425\"
+    />\n  <presetinput identifier=\"height_depth\" uid=\"1272039117\" type=\"0\"
+    value=\"0.071\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 1
   GenerateAllMipmaps: 1
@@ -160,13 +161,13 @@ MonoBehaviour:
     identifier=\"$outputsize\" uid=\"771571188\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
   MaterialShader: Shader Graphs/coral 2
-  RenderTextures: 0
-  OutputRemaped: 0
+  RenderTextures: 1
+  OutputRemaped: 1
   Presets: []
   references:
     version: 2
     RefIds:
-    - rid: 8658058305658683403
+    - rid: 8658058403476144176
       type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 0
@@ -185,7 +186,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683404
+    - rid: 8658058403476144177
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 1
@@ -196,7 +197,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 0
-        Data: 1011
+        Data: 0
         NumericalDescription:
           DefaultValue: 0
           MinValue: 0
@@ -207,7 +208,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683405
+    - rid: 8658058403476144178
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 2
@@ -229,7 +230,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683406
+    - rid: 8658058403476144179
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 3
@@ -251,7 +252,7 @@ MonoBehaviour:
           LabelTrue: 
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683407
+    - rid: 8658058403476144180
       type: {class: SubstanceInputFloat2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 4
@@ -271,7 +272,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683408
+    - rid: 8658058403476144181
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 5
@@ -292,7 +293,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683409
+    - rid: 8658058403476144182
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 6
@@ -304,7 +305,7 @@ MonoBehaviour:
             of the input image's color
           Type: 0
           WidgetType: 1
-        Data: 0.521
+        Data: 0.649
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0
@@ -313,7 +314,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683410
+    - rid: 8658058403476144183
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 7
@@ -325,7 +326,7 @@ MonoBehaviour:
             of the input image
           Type: 0
           WidgetType: 1
-        Data: 0.489
+        Data: 0.5
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0
@@ -334,7 +335,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683411
+    - rid: 8658058403476144184
       type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 8
@@ -349,7 +350,7 @@ MonoBehaviour:
             border.'
           Type: 0
           WidgetType: 1
-        Data: 0.03
+        Data: 0.071
         NumericalDescription:
           DefaultValue: 0.03
           MinValue: 0

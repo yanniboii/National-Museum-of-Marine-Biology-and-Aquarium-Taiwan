@@ -38,7 +38,7 @@ MonoBehaviour:
       Index: 0
       Type: 8
       Channel: baseColor
-    OutputTexture: {fileID: 2800000, guid: 1727980806b2a1245af6ca1d3f5feb7e, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 3d30ea62cab79d14c887feed0b8af587, type: 3}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -54,7 +54,7 @@ MonoBehaviour:
       Index: 1
       Type: 8
       Channel: normal
-    OutputTexture: {fileID: 2800000, guid: 11ecf98312eb81d4eb0f904817f1039d, type: 3}
+    OutputTexture: {fileID: 2800000, guid: fee35bfedf2ce3a41be44fdbd4575bf5, type: 3}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
       Index: 2
       Type: 8
       Channel: roughness
-    OutputTexture: {fileID: 2800000, guid: 33a17fb8c076f774cbed5399d7ad4fe8, type: 3}
+    OutputTexture: {fileID: 2800000, guid: e2d7a0f30c485f44d91cf21be8febe1f, type: 3}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
       Index: 3
       Type: 8
       Channel: metallic
-    OutputTexture: {fileID: 2800000, guid: a5864cdd294062349bd689fff2d481cd, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 19e000466606d8544bffff0cc86206ea, type: 3}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -102,7 +102,7 @@ MonoBehaviour:
       Index: 4
       Type: 8
       Channel: height
-    OutputTexture: {fileID: 2800000, guid: 32dbed32270a39b4ab3bfaa0e7a453de, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 6540c73b21d8e384a955e4fb5123cf13, type: 3}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
       Index: 5
       Type: 8
       Channel: ambientOcclusion
-    OutputTexture: {fileID: 2800000, guid: a24ee2197b95961479245a6d5b2cca57, type: 3}
+    OutputTexture: {fileID: 2800000, guid: d633d98352e3efa4faabd292e073bcc8, type: 3}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
       Index: 6
       Type: 8
       Channel: mask
-    OutputTexture: {fileID: 2800000, guid: 9740c728bf909da42a325c3a3d0d5414, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 0d6891962d6a5dc49997927cf48e26e4, type: 3}
     sRGB: 0
     IsVirtual: 1
     IsAlphaAssignable: 0
@@ -148,11 +148,11 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://coral_3\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"771571188\" type=\"8\" value=\"10,10\" />\n 
-    <presetinput identifier=\"$randomseed\" uid=\"2056203174\" type=\"4\" value=\"1011\"
-    />\n  <presetinput identifier=\"hue\" uid=\"1272037347\" type=\"0\" value=\"0.277\"
-    />\n  <presetinput identifier=\"saturation\" uid=\"1272037353\" type=\"0\" value=\"0.361\"
+    <presetinput identifier=\"hue\" uid=\"1272037347\" type=\"0\" value=\"0.681\"
+    />\n  <presetinput identifier=\"saturation\" uid=\"1272037353\" type=\"0\" value=\"0.649\"
     />\n  <presetinput identifier=\"luminosity\" uid=\"1272037335\" type=\"0\" value=\"0.425\"
-    />\n </sbspreset>\n"
+    />\n  <presetinput identifier=\"height_depth\" uid=\"1272039117\" type=\"0\"
+    value=\"0.071\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 1
   GenerateAllMipmaps: 1
@@ -161,8 +161,8 @@ MonoBehaviour:
     identifier=\"$outputsize\" uid=\"771571188\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
   MaterialShader: Shader Graphs/coral 2
-  RenderTextures: 1
-  OutputRemaped: 1
+  RenderTextures: 0
+  OutputRemaped: 0
   Presets: []
   references:
     version: 2
@@ -284,7 +284,7 @@ MonoBehaviour:
             image
           Type: 0
           WidgetType: 1
-        Data: 0.277
+        Data: 0.681
         NumericalDescription:
           DefaultValue: 0.5
           MinValue: 0
