@@ -1601,6 +1601,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.22107448
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22291316
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6718205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6708898
+      objectReference: {fileID: 0}
     - target: {fileID: 7558220520847108336, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
       propertyPath: m_Name
       value: Loggerhead Turtle Move 1
@@ -2328,6 +2344,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.22107448
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22291316
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6718205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998383174862611272, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6708898
+      objectReference: {fileID: 0}
     - target: {fileID: 7558220520847108336, guid: 553d184a8e04eee4fa9fa410dd9d5762, type: 3}
       propertyPath: m_Name
       value: Loggerhead Turtle Move 2
@@ -2935,6 +2967,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 498800846}
     m_Modifications:
+    - target: {fileID: 823188517493415223, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999589
+      objectReference: {fileID: 0}
+    - target: {fileID: 823188517493415223, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.009077219
+      objectReference: {fileID: 0}
     - target: {fileID: 1851485662228834319, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
       propertyPath: m_Name
       value: Zebra shark move
@@ -2986,6 +3026,34 @@ PrefabInstance:
     - target: {fileID: 6199785345250410531, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384173642879702542, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4957036
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384173642879702542, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4957036
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384173642879702542, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50425977
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384173642879702542, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50425977
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583198009283303712, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.047401577
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583198009283303712, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03196296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583198009283303712, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.015032709
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7248509322391706846, guid: 7b216d9feb7d522408ee1b9bb1a1fe6b, type: 3}
