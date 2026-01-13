@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,55 +5,34 @@ public class InteractWithFish : MonoBehaviour
 {
     [SerializeField] private InputActionReference scareActionReference;
     [SerializeField] private InputActionReference lureActionReference;
-    [SerializeField] private TransformListValue allSchools;
+    [SerializeField] private Transform school;
 
     [SerializeField] private float scareRadius;
     [SerializeField] private float lureRadius;
 
-
-    void OnEnable()
+    public void Scare(InputAction.CallbackContext context)
     {
-        scareActionReference.action.performed += Scare();
-        lureActionReference.action.performed += Lure();
-    }
 
-    private Action<InputAction.CallbackContext> Scare()
-    {
-        for (int i = 0; i < allSchools.value.Count; i++)
+        Vector3 pos = school.position;
+
+        if (Mathf.Abs(Vector3.Distance(pos, transform.position)) < scareRadius)
         {
-            Vector3 pos = allSchools.value[i].position;
-
-            if (Mathf.Abs(Vector3.Distance(pos, transform.position)) < scareRadius)
-            {
-
-            }
+            school.position = new Vector3(Random.Range(-200, 200),
+                                                            Random.Range(50, 150),
+                                                            Random.Range(-200, 200));
         }
-
-        return null;
     }
 
-    private Action<InputAction.CallbackContext> Lure()
+    public void Lure(InputAction.CallbackContext context)
     {
         float closestDistance = float.PositiveInfinity;
-        Debug.Log(allSchools.value.Count);
 
-        for (int i = 0; i < allSchools.value.Count; i++)
+        Vector3 pos = school.position;
+        float distance = Mathf.Abs(Vector3.Distance(pos, transform.position));
+
+        if (distance < closestDistance)
         {
-            Vector3 pos = allSchools.value[i].position;
-            float distance = Mathf.Abs(Vector3.Distance(pos, transform.position));
-
-            if (distance < closestDistance)
-            {
-                allSchools.value[i].position = transform.position;
-            }
+            school.position = transform.position;
         }
-
-        return null;
-    }
-
-    private void OnDisable()
-    {
-        scareActionReference.action.started -= Scare();
-        lureActionReference.action.started -= Lure();
     }
 }
