@@ -47,12 +47,13 @@ public class BoidMaster : MonoBehaviour
 
         seed = Random.Range(0, 10000);
         CreateBuffer();
+        SpawnDispatch();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Dispatch();
+        MoveDispatch();
     }
 
     private void OnDestroy()
@@ -62,17 +63,31 @@ public class BoidMaster : MonoBehaviour
 
     void CreateBuffer()
     {
-        boidComputeBuffer = new ComputeBuffer(boidAmount, (sizeof(float) * 10));
+        boidComputeBuffer = new ComputeBuffer(boidAmount, (sizeof(float) * 6));
     }
 
-    void SetBuffer()
+    void SetBuffer(string kernel)
     {
-        boidComputeShader.SetBuffer(0, "Boids", boidComputeBuffer);
+        boidComputeShader.SetBuffer(boidComputeShader.FindKernel(kernel), "Boids", boidComputeBuffer);
     }
 
-    void SetData()
+    void SetSpawnData(string kernel)
     {
-        SetBuffer();
+        SetBuffer(kernel);
+
+        boidComputeShader.SetFloat("time", Time.time);
+
+        boidComputeShader.SetInt("boidAmount", boidAmount);
+
+        boidComputeShader.SetVector("boundsExtents", boundsExtents);
+        boidComputeShader.SetVector("boundsCenter", boundsCenter);
+
+        boidComputeShader.SetFloat("seed", seed);
+    }
+
+    void SetMoveData(string kernel)
+    {
+        SetBuffer(kernel);
 
         boidComputeShader.SetFloat("deltaTime", Time.deltaTime);
         boidComputeShader.SetFloat("time", Time.time);
@@ -102,7 +117,6 @@ public class BoidMaster : MonoBehaviour
         boidComputeShader.SetFloat("alignmentStrength", alignmentStrength);
 
         boidComputeShader.SetFloat("seed", seed);
-        boidComputeShader.SetBool("boidsInitialized", boidsInitialized);
     }
 
     void GetData()
@@ -116,26 +130,24 @@ public class BoidMaster : MonoBehaviour
         //boidComputeBuffer.GetData(cpuData);
     }
 
-    void Dispatch()
+    void SpawnDispatch()
     {
-        SetData();
+        SetSpawnData("Spawn");
 
         int numThreads = 128;
         int groups = Mathf.CeilToInt((float)boidAmount / (float)numThreads);
 
-        boidComputeShader.Dispatch(0, groups, 1, 1);
+        boidComputeShader.Dispatch(boidComputeShader.FindKernel("Spawn"), groups, 1, 1);
+    }
 
-        //GetData();
-        //if (boidsInitialized && check < 1)
-        //{
-        //    for (int i = 0; i < 2; i++)
-        //    {
-        //        Debug.Log($"Boid {i}: \nPos={cpuData[i].pos}, Vel={cpuData[i].velocity}");
-        //    }
-        //    check++;
-        //}
+    void MoveDispatch()
+    {
+        SetMoveData("Move");
 
-        boidsInitialized = true;
+        int numThreads = 128;
+        int groups = Mathf.CeilToInt((float)boidAmount / (float)numThreads);
+        
+        boidComputeShader.Dispatch(boidComputeShader.FindKernel("Move"), groups, 1, 1);
     }
 
     public int GetBoidAmount() { return boidAmount; }
@@ -149,5 +161,4 @@ struct BoidData
 {
     public Vector3 pos;
     public Vector3 velocity;
-    public Vector4 rotation;
 }

@@ -2,7 +2,6 @@ struct Boid
 {
     float3 position;
     float3 velocity;
-    float4 rotation;
 };
 
 StructuredBuffer<Boid> boids;
@@ -22,19 +21,19 @@ void Instancing_float(
 
     // Build orthonormal basis
     float3 right = normalize(cross(up, forward));
-    up = cross(forward, right);
+    up = normalize(cross(forward, right));
 
     float3x3 rot = float3x3(right, up, forward);
 
     // Rotate & translate vertex
-    float3 localPos = mul(rot, Position);
+    float3 localPos = mul(Position, rot);
     float3 newPos = localPos + b.position;
 
     // Rotate normal
-    float3 localNormal = mul(rot, Normal);
+    float3 localNormal = normalize(mul(Normal, rot));
 
-    WorldPosition = TransformObjectToWorld(newPos);
-    WorldNormal = TransformObjectToWorldNormal(localNormal);
+    WorldPosition = newPos;
+    WorldNormal = localNormal;
 
 }
 
