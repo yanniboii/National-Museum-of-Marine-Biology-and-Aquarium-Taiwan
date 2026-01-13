@@ -341,7 +341,7 @@ public class BezierCurve : MonoBehaviour
         for (int i = 1; i < limit; i++)
         {
             currentPoint = GetPoint(p1, p2, i / _res);
-            Gizmos.DrawCube(currentPoint, Vector3.one);
+            //Gizmos.DrawCube(currentPoint, Vector3.one);
             Gizmos.DrawLine(lastPoint, currentPoint);
             lastPoint = currentPoint;
         }

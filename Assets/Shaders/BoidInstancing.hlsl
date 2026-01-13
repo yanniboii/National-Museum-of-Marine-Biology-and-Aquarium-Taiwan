@@ -9,6 +9,7 @@ StructuredBuffer<Boid> boids;
 void Instancing_float(
         float3 Position, 
         float3 Normal, 
+        float3 Scale,
         float ID, 
         out float3 WorldPosition, 
         out float3 WorldNormal)
@@ -26,6 +27,7 @@ void Instancing_float(
     float3x3 rot = float3x3(right, up, forward);
 
     // Rotate & translate vertex
+    Position *= Scale;
     float3 localPos = mul(Position, rot);
     float3 newPos = localPos + b.position;
 
