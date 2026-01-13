@@ -1,0 +1,152 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel GeneratePoints
+#pragma kernel MovePoints
+
+struct Point
+{
+    float3 position;
+    uint isSolid;
+    uint exists;
+};
+
+RWStructuredBuffer<Point> points;
+
+cbuffer Params
+{
+    float seed;
+    float realtimeSinceStartup;
+    
+    float3 seedPoint;
+    float3 boundStart;
+    float3 boundEnd;
+    
+    float radius;
+    float3 voxelSize;    
+    int gridResolution;
+};
+
+
+uint GetPointIDOnGrid(int x, int y, int z)
+{
+    return (uint) (x + y * gridResolution + z * gridResolution * gridResolution);
+}
+
+float3 GetPointFromGridID(uint gridID)
+{
+    float3 p;
+    
+    p.x = gridID % gridResolution;
+    p.y = (gridID / gridResolution) % gridResolution;
+    p.z = gridID / (gridResolution * gridResolution);
+    
+    return p;
+}
+
+float Random(float2 co)
+{
+    return (frac(sin(dot(co.xy, float2(12.9898, 78.233))) * 43758.5453)) * 1;
+}
+
+float3 RandomFloat3(float id)
+{
+    return float3(Random(float2(id.x * 37.0 + seed, realtimeSinceStartup * 0.123)),
+                        Random(float2(id.x * 57.0 + seed, realtimeSinceStartup * 0.345)),
+                        Random(float2(id.x * 97.0 + seed, realtimeSinceStartup * 0.567)));
+}
+
+float3 RandomMove(float2 p)
+{
+    float chance = Random(p);
+    chance = lerp(0, 6, chance);
+    
+    if (chance <= 1)
+        return float3(voxelSize.x, 0, 0);
+    if (chance <= 2)
+        return float3(-voxelSize.x, 0, 0);
+    if (chance <= 3)
+        return float3(0, voxelSize.y, 0);
+    if (chance <= 4)
+        return float3(0, -voxelSize.y, 0);
+    if (chance <= 5)
+        return float3(0, 0, voxelSize.z);
+    if (chance <= 6)
+        return float3(0, 0, -voxelSize.z);
+
+    return float3(0, 0, 0);
+}
+
+void Move(float id)
+{
+    if (points[id].isSolid == 1)
+        return;
+    
+    uint numStructs, stride;
+    points.GetDimensions(numStructs, stride);
+    
+    float3 step = RandomMove(float2(id * 79.0 + seed, realtimeSinceStartup * 0.3435));
+
+    points[id].position += step;
+
+    for (uint j = 0; j < numStructs; j++)
+    {
+        if(points[j].isSolid != 1)
+            return;
+        
+        if (length(abs(float3((points[id].position - points[j].position))) < length(voxelSize)))
+        {
+            points[id].isSolid = 1;
+            break;
+        }
+    }
+    
+}
+
+void SetFirstPoint()
+{
+    Point p;
+        
+    p.position = seedPoint;
+    p.isSolid = 1;
+    p.exists = 1;
+        
+    points[0] = p;
+}
+
+[numthreads(8, 1, 1)]
+void GeneratePoints(uint3 id : SV_DispatchThreadID)
+{    
+    if (id.x == 0)
+    {
+        SetFirstPoint();
+        return;
+    }
+    Point p;
+        
+    float3 randomPosition = RandomFloat3(id.x);
+    float3 scaledPosition = lerp(boundStart, boundEnd, randomPosition);
+    
+
+    scaledPosition = floor(scaledPosition);
+    uint gridPos = GetPointIDOnGrid(scaledPosition.x,scaledPosition.y,scaledPosition.z);
+    
+    p.position = GetPointFromGridID(gridPos);
+    p.isSolid = 0;
+    p.exists = 1;
+    
+    points[id.x] = p;
+}
+
+[numthreads(8, 1, 1)]
+void MovePoints(uint3 id : SV_DispatchThreadID)
+{    
+    if (points[id.x].isSolid == 1)
+        return;
+    
+    if(points[id.x].exists == 0)
+        return;
+    
+    Move(id.x);
+    
+    uint newGridPos = GetPointIDOnGrid(points[id.x].position.x, points[id.x].position.y, points[id.x].position.z);
+    points[id.x].position = GetPointFromGridID(newGridPos);
+}
