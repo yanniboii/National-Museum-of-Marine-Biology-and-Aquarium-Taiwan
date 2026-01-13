@@ -48,13 +48,18 @@ MonoBehaviour:
   boidComputeShader: {fileID: 7200000, guid: bbe2c962dc25355499dcad629b520234, type: 3}
   boidAmount: 1000
   boundsExtents: {x: 200, y: 100, z: 200}
+  boundsRadius: 0
   boundsCenter: {x: 0, y: 0, z: 0}
-  forwardSpeed: 2
-  rotationSpeed: 0.001
+  followTarget: {fileID: 0}
+  avoidTarget: {fileID: 0}
+  forwardSpeed: 10
+  rotationSpeed: 1
   avoidanceRadius: 2
   cohesionRadius: 8
   alignmentRadius: 6
   boundsStrength: 1
+  followStrength: 0
+  avoidStrength: 0
   avoidanceStrength: 0.9
   cohesionStrength: 0.35
   alignmentStrength: 0.45
@@ -71,6 +76,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boidMaster: {fileID: 1033579682345998465}
-  boidMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  boidMaterial: {fileID: 2100000, guid: 004a13f4b4e79e84fbee50bfd5805949, type: 2}
-  boidColor: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0}
+  boidMesh: {fileID: -6944954265951572821, guid: 54465bd6f6362ae4e947a8751d7493f4, type: 3}
+  boidMaterial: {fileID: -876546973899608171, guid: 63d6d439ddb10654f9abc353fe58f573, type: 3}
+  boidColor: {r: 0.5566038, g: 0.2546725, b: 0.2546725, a: 0}
