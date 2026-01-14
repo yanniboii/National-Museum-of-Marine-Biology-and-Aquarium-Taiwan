@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundsExtents: {x: 40, y: 20, z: 40}
-  boundsRadius: 50
+  boundsRadius: 5
   boundsCenter: {fileID: 0}
   forwardSpeed: 0.2
   rotationSpeed: 0.02
@@ -58,7 +58,7 @@ MonoBehaviour:
   cohesionStrength: 0.45
   alignmentStrength: 0.55
   direction: {x: 0, y: 0, z: 0}
-  allBoidsValue: {fileID: 11400000, guid: 183a9a88954037341a296a2a85008bd9, type: 2}
+  allBoidsValue: {fileID: 11400000, guid: 14a3c81a5d3ca0449b16e5210a2d8e1f, type: 2}
   debug: 0
 --- !u!1 &2996658371446921560
 GameObject:
@@ -121,6 +121,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -142,6 +144,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
