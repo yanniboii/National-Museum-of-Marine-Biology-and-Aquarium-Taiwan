@@ -6,8 +6,10 @@ public class BoidMaster : MonoBehaviour
     [SerializeField] private int boidAmount;
 
     [SerializeField] private Vector3 boundsExtents = new Vector3(20, 10, 20);
+    [SerializeField] private Vector3 boundsCullingExtents = new Vector3(20, 10, 20);
     [SerializeField] private float boundsRadius;
     [SerializeField] private Vector3 boundsCenter = Vector3.zero;
+    [SerializeField] private Vector3 boundsCullingCenter = Vector3.zero;
 
     [SerializeField] private Transform followTarget;
     [SerializeField] private Transform avoidTarget;
@@ -152,8 +154,8 @@ public class BoidMaster : MonoBehaviour
 
     public int GetBoidAmount() { return boidAmount; }
     public ComputeBuffer GetBoidComputeBuffer() { return boidComputeBuffer; }
-    public Vector3 GetBoundsCenter() { return boundsCenter; }
-    public Vector3 GetBoundsExtents() { return boundsExtents; }
+    public Vector3 GetBoundsCenter() { return boundsCullingCenter; }
+    public Vector3 GetBoundsExtents() { return boundsCullingExtents; }
 }
 
 
