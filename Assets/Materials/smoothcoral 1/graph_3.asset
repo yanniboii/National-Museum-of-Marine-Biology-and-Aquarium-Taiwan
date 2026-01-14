@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
+  m_Name: graph_3
+  m_EditorClassIdentifier: Adobe.Substance::Adobe.Substance.SubstanceGraphSO
+  AssetPath: Assets/Materials/coralreef.sbsar
+  RawData: {fileID: -244192453324840774, guid: 33d248e1be089764694f56598afdaeb3, type: 3}
+  Name: graph_3
+  IsRoot: 1
+  FlagedForDelete: 0
+  GUID: 319faddb-3658-42f5-a7e1-38aa6e4620bf
+  Index: 3
+  Input:
+  - rid: 8658058463850790928
+  - rid: 8658058463850790929
+  - rid: 8658058463850790930
+  - rid: 8658058463850790931
+  - rid: 8658058463850790932
+  - rid: 8658058463850790933
+  - rid: 8658058463850790934
+  Output:
+  - Index: 0
+    VirtualOutputIndex: 7
+    Description:
+      Identifier: basecolor
+      Label: basecolor
+      Index: 0
+      Type: 8
+      Channel: baseColor
+    OutputTexture: {fileID: 2800000, guid: 29a7f35ba7a1f9a42bd503b4fdab1721, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _BaseColorMap
+  - Index: 1
+    VirtualOutputIndex: 8
+    Description:
+      Identifier: normal
+      Label: normal
+      Index: 1
+      Type: 8
+      Channel: normal
+    OutputTexture: {fileID: 2800000, guid: 08045f8ebb024ad45a602da56c19b6bf, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 0
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _NormalMap
+  - Index: 2
+    VirtualOutputIndex: 9
+    Description:
+      Identifier: roughness
+      Label: roughness
+      Index: 2
+      Type: 8
+      Channel: roughness
+    OutputTexture: {fileID: 2800000, guid: fb389f7fef3132942a11d85f4c8665a1, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _RoughnessMap
+  - Index: 3
+    VirtualOutputIndex: 10
+    Description:
+      Identifier: metallic
+      Label: metallic
+      Index: 3
+      Type: 8
+      Channel: metallic
+    OutputTexture: {fileID: 2800000, guid: 63c1eaaf75a30f349ba0d802a129db8d, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _MetallicGlossMap
+  - Index: 4
+    VirtualOutputIndex: 11
+    Description:
+      Identifier: height
+      Label: height
+      Index: 4
+      Type: 8
+      Channel: height
+    OutputTexture: {fileID: 2800000, guid: 59ee1675ba9ea82418f712df7f09cf9d, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _HeightMap
+  - Index: 5
+    VirtualOutputIndex: 12
+    Description:
+      Identifier: ambientocclusion
+      Label: ambientocclusion
+      Index: 5
+      Type: 8
+      Channel: ambientOcclusion
+    OutputTexture: {fileID: 2800000, guid: bf92ad11473f6e94487a4b88f8ef24c5, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _OcclusionMap
+  - Index: 6
+    VirtualOutputIndex: 6
+    Description:
+      Identifier: mask
+      Label: mask
+      Index: 6
+      Type: 8
+      Channel: mask
+    OutputTexture: {fileID: 2800000, guid: 54286ddd27823cb44a7a5cc8668fd2c9, type: 3}
+    sRGB: 0
+    IsVirtual: 1
+    IsAlphaAssignable: 0
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 4
+    MaterialTextureTarget: _MaskMap
+  HasPhysicalSize: 0
+  PhysicalSize: {x: 0, y: 0, z: 0}
+  EnablePhysicalSize: 0
+  Thumbnail: 
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://smoothcoral_1\" label=\"\" >\n 
+    <presetinput identifier=\"$outputsize\" uid=\"23748002\" type=\"8\" value=\"10,10\"
+    />\n  <presetinput identifier=\"hue\" uid=\"1732693616\" type=\"0\" value=\"0.473\"
+    />\n  <presetinput identifier=\"saturation\" uid=\"1732693626\" type=\"0\" value=\"0.59\"
+    />\n  <presetinput identifier=\"luminosity\" uid=\"1732693628\" type=\"0\" value=\"0.487\"
+    />\n </sbspreset>\n"
+  IsRuntimeOnly: 0
+  GenerateAllOutputs: 1
+  GenerateAllMipmaps: 1
+  OutputMaterial: {fileID: 2100000, guid: acde6c5e54a4a024ab77cce1ce03fcc4, type: 2}
+  DefaultPreset: " <sbspreset pkgurl=\"pkg://smoothcoral_1\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"23748002\" type=\"8\" value=\"10,10\" />\n </sbspreset>\n"
+  MaterialShader: Shader Graphs/triplanar smoothcoral 1
+  RenderTextures: 0
+  OutputRemaped: 0
+  Presets: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8658058463850790928
+      type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 0
+        Description:
+          Identifier: $outputsize
+          Label: $outputsize
+          GuiGroup: 
+          GuiDescription: 
+          Type: 5
+          WidgetType: 0
+        Data: {x: 10, y: 10}
+        NumericalDescription:
+          DefaultValue: {x: 8, y: 8}
+          MinValue: {x: 0, y: 0}
+          MaxValue: {x: 1, y: 1}
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790929
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 1
+        Description:
+          Identifier: $randomseed
+          Label: $randomseed
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 0
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790930
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 2
+        Description:
+          Identifier: hue
+          Label: Hue
+          GuiGroup: 
+          GuiDescription: The <b>Hue</b> parameter determines the color of the input
+            image
+          Type: 0
+          WidgetType: 1
+        Data: 0.473
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790931
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 3
+        Description:
+          Identifier: saturation
+          Label: Saturation
+          GuiGroup: 
+          GuiDescription: The <b>Saturation</b> parameter determines the saturation
+            of the input image's color
+          Type: 0
+          WidgetType: 1
+        Data: 0.59
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790932
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 4
+        Description:
+          Identifier: luminosity
+          Label: Lightness
+          GuiGroup: 
+          GuiDescription: The <b>Lightness</b> parameter determines the lightness
+            of the input image
+          Type: 0
+          WidgetType: 1
+        Data: 0.487
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790933
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 5
+        Description:
+          Identifier: scale
+          Label: Scale
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 1
+        NumericalDescription:
+          DefaultValue: 1
+          MinValue: 1
+          MaxValue: 8
+          SliderStep: 1
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 8658058463850790934
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 6
+        Description:
+          Identifier: scale_1
+          Label: Scale
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 1
+        NumericalDescription:
+          DefaultValue: 1
+          MinValue: 1
+          MaxValue: 4
+          SliderStep: 1
+          SliderClamp: 1
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []

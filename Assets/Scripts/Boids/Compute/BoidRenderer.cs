@@ -7,7 +7,6 @@ public class BoidRenderer : MonoBehaviour
     [SerializeField] private Mesh boidMesh;
     [SerializeField] private Material boidMaterial;
 
-    [SerializeField] private Color boidColor;
     ComputeBuffer argsBuffer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +28,6 @@ public class BoidRenderer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        boidMaterial.SetColor("_BoidColor", boidColor);
         boidMaterial.SetBuffer("boids", boidMaster.GetBoidComputeBuffer());
 
         Graphics.DrawMeshInstancedIndirect(
