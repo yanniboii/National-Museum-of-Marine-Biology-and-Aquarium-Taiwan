@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
   m_Name: graph_0
   m_EditorClassIdentifier: Adobe.Substance::Adobe.Substance.SubstanceGraphSO
-  AssetPath: Assets/Materials/seasand 1.sbsar
-  RawData: {fileID: -244192453324840774, guid: 529a5359e41bef445bc18d0742d7b92e, type: 3}
+  AssetPath: Assets/Materials/coralreef.sbsar
+  RawData: {fileID: -244192453324840774, guid: 33d248e1be089764694f56598afdaeb3, type: 3}
   Name: graph_0
   IsRoot: 1
   FlagedForDelete: 0
-  GUID: b8bd6298-e06f-4583-b245-538fc65ebac3
+  GUID: 0444e274-8bad-46f2-8dce-ed895b1dbd0b
   Index: 0
   Input:
-  - rid: 8658058305658683392
-  - rid: 8658058305658683393
+  - rid: 8658058463850790912
+  - rid: 8658058463850790913
   Output:
   - Index: 0
     VirtualOutputIndex: 7
@@ -31,7 +31,7 @@ MonoBehaviour:
       Index: 0
       Type: 8
       Channel: baseColor
-    OutputTexture: {fileID: 2800000, guid: 1668ce77559845f46b83b3560df05ed7, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 758b352a79d75e24c8755d476f7de3ac, type: 3}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
       Index: 1
       Type: 8
       Channel: normal
-    OutputTexture: {fileID: 2800000, guid: ad199b45ed28ed64297ab4705584cf29, type: 3}
+    OutputTexture: {fileID: 2800000, guid: f17e865e0cd44c845a0b04620bc054f4, type: 3}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
       Index: 2
       Type: 8
       Channel: roughness
-    OutputTexture: {fileID: 2800000, guid: ccc278b31b849f24c8494f679b7e671c, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
       Index: 3
       Type: 8
       Channel: metallic
-    OutputTexture: {fileID: 2800000, guid: 768d5e2a08bd76842b074210fb46f68f, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
       Index: 4
       Type: 8
       Channel: height
-    OutputTexture: {fileID: 2800000, guid: b13be670fe26d494e9c988286c13c8bf, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 59e1879a175ee504ea1a3dfb1c6fcf54, type: 3}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
       Index: 5
       Type: 8
       Channel: ambientOcclusion
-    OutputTexture: {fileID: 2800000, guid: 3f07182b4673a4641b64448f3a0488db, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -127,7 +127,7 @@ MonoBehaviour:
       Index: 6
       Type: 8
       Channel: mask
-    OutputTexture: {fileID: 2800000, guid: 5c8753b3b92577f46af37a85c3575797, type: 3}
+    OutputTexture: {fileID: 2800000, guid: 99542b9b310ec084fa9decee0776f5c4, type: 3}
     sRGB: 0
     IsVirtual: 1
     IsAlphaAssignable: 0
@@ -141,9 +141,9 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: 
   IsRuntimeOnly: 0
-  GenerateAllOutputs: 1
+  GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
-  OutputMaterial: {fileID: 2100000, guid: bfa3e8018d3cd8b498212ba4656fbbbc, type: 2}
+  OutputMaterial: {fileID: 2100000, guid: a5ecc1b1760392c429b676cfa3a04995, type: 2}
   DefaultPreset: " <sbspreset pkgurl=\"pkg://seasand\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"224567468\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
@@ -154,7 +154,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 8658058305658683392
+    - rid: 8658058463850790912
       type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 8658058305658683393
+    - rid: 8658058463850790913
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 1
