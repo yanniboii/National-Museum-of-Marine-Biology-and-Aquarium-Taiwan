@@ -5,6 +5,7 @@ public class SplineFollow : MonoBehaviour
     [SerializeField] private BezierCurve bezierCurve;
     [SerializeField] private float speed;
     [SerializeField] private float pointRange;
+    [SerializeField] private bool autoRotate;
 
     private Vector3[] points;
     private int currentTargetIndex = 0;
@@ -21,6 +22,9 @@ public class SplineFollow : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(CalculateCurveDirection().normalized);
 
         transform.Translate(speed * CalculateCurveDirection().normalized, Space.World);
+
+        if(autoRotate)
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.10f);
     }
 
     private Vector3 CalculateCurveDirection()
